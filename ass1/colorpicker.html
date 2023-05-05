@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color picker</title>
+</head>
+<style>
+    .box{
+        height:400px;
+        display:flex;
+         align-items:center;
+         justify-content: center;
+         border:1px solid black
+    }
+</style>
+<body>
+    
+    <div class="box">
+     <button class="btn">change</button>
+    </div>
+    <script>
+        let div = document.querySelector(".box");
+        let btn = document.querySelector(".btn");
+         let color = ["red","green","blue","yellow","black","pink","brown"];
+         let  counter =-1;
+         btn.addEventListener("click", () => {
+          counter++;
+            div.style.background = color[counter];
+            
+
+            if (counter==7) {
+            counter = 0;
+            console.log
+            div.style.background = color[counter];
+            }
+            console.log(counter)
+
+         }); 
+
+
+    </script>
+</body>
+</html>

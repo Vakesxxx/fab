@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button class="btOne">decrease</button>
+    <button class="btnTwo">reset</button>
+    <button class="btnThree">increase</button>
+
+  <script>
+    let heading = document.querySelector("h1");
+    let button1 = document.querySelector(".btnOne")
+    let button2 = document.querySelector(".btntwo")
+    let button3 = document.querySelector(".btnThree")
+    
+    let count = 0;
+
+    button3.addEventListener("click", function increase() {    
+        count++;
+        heading.innerHTML = count;
+        console.log(count);
+    });
+      let emma = 0;
+    button1.subEventListener("click", function decrease() {    
+        emma++;
+        heading.innerHTML = count;
+        console.log(count);
+    });
+    
+  </script>
+</body>
+</html>

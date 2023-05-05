@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        div{
+            height: 500px;
+            display: flex;
+        }
+    </style>
+<body>
+    <div class="box">
+        <button class="btn">change</button>
+    </div>
+    <script>
+        //  conditionals
+
+        // correction
+
+   function sum(a,b,c){
+       console.log( a+b+c);
+   };
+
+   sum(5,10,17)
+
+   let div = document.querySelector("div");
+   let button = document.querySelector("button");
+   
+   div.style.backgroundColor = "green";
+
+   button.addEventListener("click", function color() {
+    if (div.style.backgroundColor=='green') {
+       div.style.backgroundColor = "blue"; 
+    }
+     else {
+        div.style.backgroundColor = "green";
+     };
+   });
+    </script>
+</body>
+</html>
